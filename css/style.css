@@ -1,0 +1,560 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+ul {
+  list-style: none
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#home{
+  height: calc(100vh - 150px);
+  background: no-repeat center/cover url(../images//bgh.jpg)
+}
+
+#page-cad{background: no-repeat center/cover url(../images/bgh.jpg);}
+
+#home-page{background-color: #00000098;}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;}
+
+header nav p {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.5em;
+  transition: text-shadow .6s ;
+}
+header nav p:hover {
+  text-shadow: 0px 0px 10px #fff;
+}
+
+
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+
+header nav ul li {
+  margin: 0 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+header nav ul li:hover {
+  color: #f56c11;
+  transition: .4s;
+}
+
+.topo{background-color: #00000077;}
+
+.title, .menu{ margin: 15px;}
+
+
+.header-content {
+  color: #fff;
+  font-weight: bold;
+  max-width: 400px;
+  margin: 150px auto;
+  text-align: center;
+  animation: ease text-move 2s forwards;
+}
+
+
+.header-content h1 {
+  margin-bottom: 10px;
+  font-size: 4rem;
+}
+
+@keyframes text-move{
+  from {transform:  translateY(0px);
+        opacity: 0;}
+  to {transform:   translateY(-20px);
+      opacity: 1;}
+}
+button {
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  border: 0;
+  cursor: pointer;
+  background-color: rgb(248, 124, 7);
+  color: #fff;
+}
+
+/* brendon */
+.login,.user, .entrar, .dados{ display: flex;
+  align-items: center;
+  justify-content: center;
+margin: 4vh 0 0 0;
+border-radius: 10px;
+color: #fff;}
+
+
+.fa-brands{margin:0 1vh;
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer; }
+
+#facebook-login{ color:#264cb6;}
+
+.fa-apple{color: #000000;}
+
+.fa-google{color: #c72f2f}
+
+.entrar, .conta{background-color: #fff ;
+  color: #000;
+  display: flex;
+  align-items: center;
+justify-content: center;
+  width: 25%;
+  margin: 4vh 0 0 37%;
+  cursor: pointer;
+}
+
+.redes{
+  margin-left: 1vh;
+  
+}
+
+.conta{width: 18% ;
+  height:5%;
+  margin: 2vh 0 0 41% ;
+  border-radius: 10px;
+  cursor: pointer;
+  display:flex;}
+
+.termos{ display: flex;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+font-size: 12px;
+margin-top: 3vh;
+color: #fff;}
+
+.link-termos{ color: #4a83ec;
+margin-left: 0.5vh;}
+
+.link-termos:hover{
+color: #1d61dd;
+}
+
+.esqueci-senha{ display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 12px;
+  margin-top: 3vh;
+  color: #cadbff;}
+
+.cadastro{
+   border: #222 solid px;
+   width: 50%;
+  height: 70%;
+  align-items: center;
+  justify-content: center;
+  margin: 2vh 25%;
+  border-radius: 10px;
+  background-color: #0c0c0ca4;
+  padding: 1%;
+}
+
+label{
+  color: #fff; 
+}
+
+.lembrar{
+  margin-top: 2vh;
+  margin-left: 38%;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* brendon */
+
+/* PACOTES */
+
+.pacotes {
+  background-color: #fff;
+  padding: 25px}
+
+.pacotes .pacotes-cards {
+  
+  margin: auto;
+  max-width: 950px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.pacotes .pacotes-title { 
+  width: 100%;
+  margin: auto;
+  padding: 15px;
+  text-align: center;
+}
+
+
+.pacotes .card {
+  margin: 25px;
+  width: 250px;
+  height: 350px;
+  background: #fff;
+  border-radius: 24px 0px;
+  box-shadow: 0px 0px 4px -1px #222;
+  position: relative;
+  transition: all 1s;
+}
+
+.pacotes .card:hover {
+  transform: scale(1.1);
+}
+
+
+.pacotes .card-image {
+  width: 250px;
+  height: 200px;
+  border-radius: 24px 0 0 0;
+  background-position: center;
+}
+
+.pacotes .card-content {
+  padding: 0 15px;
+}
+
+.pacotes .card-content h1 {
+  font-size: 0.9rem;
+}
+
+.pacotes .card-content ul  {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding-left: 0;
+}
+
+.pacotes .card-content ul li {
+  font-size: 0.6rem;
+  display: flex;
+  align-items: center;
+  margin: 3px 0px;
+  color: gray;
+  font-weight: bold;
+}
+
+.pacotes .card-content li svg {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.pacotes .card .card-tag-top{
+  position: absolute;
+  background: #f56c11;
+  right: 0;
+  top: 15px;
+  border-radius: 8px 0 0 8px;
+  padding: 5px 10px;
+  box-shadow: 1px 2px 5px -2px #222;
+}
+
+
+.pacotes .card .card-tag-bottom {
+  position: absolute;
+  left: 0;
+  top: 160px;
+  background: #1d61dd;
+  border-radius: 0 8px 8px 0;
+  padding: 5px 10px;
+  box-shadow: 1px 1px 4px 1px #222;
+}
+
+.pacotes .card .card-tag p {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #ffff;
+}
+
+/* SERVIÇOS */
+
+.servicos {
+  padding: 15px;
+}
+
+.servicos .servicos-title {
+  text-align: center;
+  margin: 25px;
+}
+
+.servicos .servicos-cards {
+  display: flex;
+  padding: 35px 0 ;
+  max-width: 950px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.servicos .card {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px;
+}
+
+.servicos .card svg {
+  width: 60px;
+  height: 60px;
+  margin: 50px 0;
+  transition: all 1s;
+}
+
+.servicos .card svg:hover {
+  color: #f56c11;
+  transform: scale(1.1);
+}
+
+.servicos .card h3 {
+  font-weight: bold;
+}
+
+.servicos .card p {
+  color: gray;
+  font-size: .8rem;
+  text-align: center;
+}
+
+.servicos .card .card-content {
+  height: 100px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+
+#map {
+  height: 400px;  
+  width: 100%; 
+}
+
+.contato {
+  background-color: #e1e8f7;
+  position: relative;
+}
+
+.contato .contato-card {
+  width: 350px;
+  height: 300px;
+  padding: 0 30px;
+  background: #fff;
+  position: absolute;
+  z-index: 99;
+
+  border-radius: 8px;
+
+  top: calc(50% - 150px);
+  left: calc(20% - 170px);
+
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
+}
+
+.contato .contato-card  h1 {
+  padding-right: 58px;
+}
+
+.contato .contato-card li {
+  font-size: .8rem;
+  font-weight: bold;
+  color: gray;
+  
+  display: flex;
+  align-items: center;
+}
+
+.contato .contato-card li svg {
+  width: 16px;
+  margin: 10px;
+}
+#whatsapp,#facebook,#instagram,#email{
+  padding: 1vh;
+  font-size: 2em;
+}
+/* Inicio do Footer  */
+footer p {
+  margin: 1vh;
+  margin-bottom: 2vh;
+}
+footer{
+  background-color: #0c0c0ca4;
+  text-align: center;
+  color: #ffffff;
+  padding: 2vh;  
+}
+
+/* Fim do Footer  */
+
+/* medias */
+
+@media (max-width: 902px) {
+  .contato {
+    padding: 60px;
+  }
+
+  .contato .contato-card {
+    left: 40px;
+  }
+}
+
+@media (max-width: 850px) {
+  .contato {
+    padding: 40px 0  ;
+  }
+
+  .contato .contato-card {
+    position: static;
+    margin: 40px auto;
+  }
+}
+
+
+@media (max-width: 720px) {
+
+  .title{ font-size: 25px;
+
+  }
+  body {
+    margin-bottom: 55px;
+    
+  }
+  
+  /* brendon */
+  .hamburguer {
+    position: absolute;
+    right: 0;
+    top: -15px;
+    cursor: pointer;
+    margin: 30px;
+  }
+  
+  .menu {
+    width: auto;
+    height: auto;
+    padding-right: 1vh;
+    background-color: rgba(46, 46, 46, 0.63);
+    position: fixed;
+    right: -5vw;
+    top: 6vh;
+    z-index: 2;
+    transition: 0.5s;
+    flex-direction: column;
+    align-items:flex-start;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .tela-login{
+    height: auto;
+    width: auto;
+  }
+  
+  .menu.open {
+    opacity: 1;
+  }
+
+  .linha{ width: 30px;
+    height: 3px;
+    background: #fff;
+    margin: 5px;
+
+  }
+
+  .login,.user, .entrar, .dados{ display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 1rem;}
+
+  .redes{color: #000;}
+
+  .entrar, .conta{ width:54%;
+    margin: 4vh 0 0 8vh;
+  }
+
+  .cadastro{
+    height: 80%;
+    width: 60%;
+  }
+
+  .lembrar{
+   margin-left: 7.5vh; 
+  }
+  
+  .entrar{
+    width: auto ;
+    margin: 4vh 2vh 2vh 2vh
+  }
+
+label {
+  position: relative;
+  font-size:  0.8rem;
+  align-items: center;
+  justify-content: center;
+  ;
+}
+
+
+
+
+    /* brendon */
+  
+  .header-content {
+    font-size: 2rem;   
+    margin: 2rem;
+  }
+  
+  .texto {
+    width: 90%;
+    font-size: 1rem;  
+  }
+  .destaques .box {
+      flex-direction: column;
+    }
+
+  header nav p {
+    width: 100%;
+    text-align: center;
+    top: -2vh;
+  }
+  footer{
+    margin-bottom: -10vh;
+  }
+
+  
+}
